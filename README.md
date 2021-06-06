@@ -14,7 +14,7 @@ Kelompok 20
 ### Latar belakang
 ### Tujuan
 ### Manfaat
-### Rumusan mMsalah
+### Rumusan Masalah
 ### Deskripsi singkat perangkat lunak
 
 ## Skema Basis Data
