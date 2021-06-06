@@ -1,5 +1,5 @@
 # Laporan Projek Akhir KOM205 Basis Data
-## Topik Projek
+## SNACKIE: Web Resep Makanan Ringan
 Asisten Praktikum
 1. Zahwa Wahyu Riana (G64180070)
 2. Mutia Marcha Fatika (G64180085)
