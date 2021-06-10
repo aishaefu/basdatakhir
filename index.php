@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Pendaftaran Siswa Baru | SMK Coding</title>
-</head>
+	<head>
+		<title>Snackie</title>
+	</head>
+	<body>
+		<h1><a href="index.php">SNACKIE</a></h1>
+		<h>Mari berbagi resep!</h>
+		<br>
 
-<body>
-	<header>
-		<h3>Pendaftaran Siswa Baru</h3>
-		<h1>SMK Coding</h1>
-	</header>
+		<h3>Log in</h3>
 
-	<h4>Menu</h4>
-	<nav>
 		<ul>
-			<li><a href="formdaftar.php">Daftar Baru</a></li>
-			<li><a href="daftarsiswa.php">Pendaftar</a></li>
+			<form action="" method="post">
+				<label for="username">Username :</label>
+				<input type="text" name="username" id="username">
+				<br>
+				<label for="password">Password :</label>
+				<input type="password" name="password" id="password">
+				<br>
+				<button type="button" name="submit">Log in</button>
+			</form>
 		</ul>
-	</nav>
 
+		<h>Belum punya akun?</h>
+		<h4><a href="daftar">Sign Up</a></h4>
 
-	<?php if(isset($_GET['status'])): ?>
-	<p>
-		<?php
-			if($_GET['status'] == 'sukses'){
-				echo "Pendaftaran siswa baru berhasil!";
-			} else {
-				echo "Pendaftaran gagal!";
-			}
-		?>
-	</p>
-	<?php endif; ?>
+		<h6><a href="about.php">about snackie</a></h6>
 
 	</body>
 </html>
