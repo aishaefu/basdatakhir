@@ -164,10 +164,6 @@ h a:active {
   color: white;
   text-decoration: none;
 }
-
-.about:hover {
-  color: #e3d105;
-}
 /* --------------------------------------------------------------------- */
 
 a:link {
@@ -180,7 +176,7 @@ a:visited {
 }
 
 a:hover {
-  color: yellow;
+  color: #e3d105;
 }
 
 a:active {
