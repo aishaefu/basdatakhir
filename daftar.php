@@ -28,7 +28,7 @@
 			</div>
 
 			<div class="login_form">
-				<form action="" method="post">
+				<form action="edit.php" method="post">
 					<input class="form" type="text" placeholder="Username">
 					<br>
 					<input class="form" type="text" placeholder="Email">
