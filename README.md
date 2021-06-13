@@ -39,6 +39,7 @@ Penjelasan ERD
 * User dapat memberikan komentar pada banyak resep dan resep dapat memiliki komentar dari banyak user.
 
 ### Skema Relasional
+![SKEMA RELASIONAL SNACKIE](https://user-images.githubusercontent.com/85338205/121797511-d77ef500-cc4a-11eb-9e67-3b893bebfeed.jpg)
 
 ## Tahapan Perancangan
 ### Konsep
