@@ -6,8 +6,9 @@ Asisten Praktikum
 
 Kelompok 20
 1. Aisyah Fauzhasna (G54190040)
-2. Tania Indiarty Rahayu (G74180074)
-3. Annisa Maimunah Muharahmah (G74180075)
+2. Yahya S. Anwar (G74180040)
+3. Tania Indiarty Rahayu (G74180074) Front-end
+4. Annisa Maimunah Muharahmah (G74180075)
 
 ## Ringkasan
 ## Pendahuluan
