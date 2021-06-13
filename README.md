@@ -31,7 +31,7 @@ Tujuan dibuat aplikasi ini sebagai penyedia tempat bagi masyarakat Indonesia unt
 
 ## Skema Basis Data
 ### Entity-Relational Diagram
-![ERD SNACKIE](https://user-images.githubusercontent.com/85338205/120992630-fe51ad00-c7ac-11eb-814c-f911afadf49e.jpg)
+![ERD SNACKIE-ERD](https://user-images.githubusercontent.com/85338205/121795914-258dfb80-cc3f-11eb-9354-96fd42f50bfd.jpg)
 
 Penjelasan ERD
 * User dapat memiliki 0 hingga banyak resep, tetapi 1 resep hanya dapat dimiliki 1 user.
