@@ -2,30 +2,41 @@
 <html>
 	<head>
 		<title>Snackie</title>
+		<link rel="stylesheet" href="style.css">
+
 	</head>
 	<body>
-		<h1><a href="index.php">SNACKIE</a></h1>
-		<h>Mari berbagi resep!</h>
-		<br>
+		<header>
+			<div class="heading">
+				<a href="index.php"><img src="img/logo.png" alt=""></a>
 
-		<h3>Log in</h3>
+				<div class="right_header">
+						<ul class="button_user">
+              <input class="search" type="text" placeholder="Cari Resep">
+							<a href="search.php"><img class="isearch" src="img/isearch.png" alt=""></a>
+							<a href="upresep.php"><button class="blogin">Buat Resep</button></a>
+              <a href="profil.php"> <img class="profil" src="img/profil.png" alt=""> </a>
+						</ul>
+				</div>
 
-		<ul>
-			<form action="" method="post">
-				<label for="username">Username :</label>
-				<input type="text" name="username" id="username">
+			</div>
+		</header>
+
+		<div class="body">
+			
+		</div>
+
+		<div class="about">
+			<h2>tentang snackie</h2>
+		</div>
+
+		<div class="body_about">
+			<p>Snackie adalah sebuah web untuk berbagi resep makanan ringan.
 				<br>
-				<label for="password">Password :</label>
-				<input type="password" name="password" id="password">
-				<br>
-				<button type="button" name="submit">Log in</button>
-			</form>
-		</ul>
-
-		<h>Belum punya akun?</h>
-		<h4><a href="daftar">Sign Up</a></h4>
-
-		<h6><a href="about.php">about snackie</a></h6>
+				Pengguna dapat login untuk bisa membagikan, memilih resep favorit,
+				serta berinteraksi dengan pengguna lainnya.
+			</p>
+		</div>
 
 	</body>
 </html>
