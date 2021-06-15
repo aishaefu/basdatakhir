@@ -12,12 +12,14 @@
 
 				<div class="right_header">
 						<ul class="button_user">
-							<input class="topform" type="text" placeholder="Username">
-							<input class="topform" type="password" placeholder="Password">
+							<form action="masuk.php" method="post">
+							<input class="topform" type="text" placeholder="Username" name="username" id="username">
+							<input class="topform" type="password" placeholder="Password" name="password" id="password">
               <!-- <input class="search" type="text" placeholder="Cari Resep">
 							<a href="search.php"><img class="isearch" src="img/isearch.png" alt=""></a> -->
-							<a href="index.php"><button class="blogin">Masuk</button></a>
+							<button class="blogin" value="login" type="submit" name="login">Masuk</button>
 							<!-- <a href="daftar.php"><button class="bdaftar">Daftar</button></a> -->
+							</form>
 						</ul>
 				</div>
 
@@ -30,16 +32,16 @@
 			</div>
 
 			<div class="login_form">
-				<form action="edit.php" method="post">
-					<input class="form" type="text" placeholder="Username">
+				<form action="daftar.php" method="post">
+					<input class="form" type="text" placeholder="Username" name="username1">
 					<br>
-					<input class="form" type="text" placeholder="Email">
+					<input class="form" type="text" placeholder="Email" name="email">
 					<br>
-					<input class="form" type="password" placeholder="Password">
+					<input class="form" type="password" placeholder="Password" name="password1">
 					<br>
-					<input class="form" type="password" placeholder="Confirm Password">
+					<input class="form" type="password" placeholder="Confirm Password" name="password2">
 					<br>
-					<a href="edit.php"><button class="send">Daftar</button></a>
+					<button class="send" type="submit" name="daftar">Daftar</button>
 
 					<!-- <input class="form" type="text" placeholder="Username">
 					<br>
