@@ -510,17 +510,6 @@ input[type="file"] {
   padding: 15px;
   min-width: 400px;
 }
-
-/* .edittextarea {
-  font-family: Arial;
-  font-size: 15px;
-  border: white solid 2px;
-  border-radius: inherit;
-  margin-bottom: 25px;
-  padding: 15px;
-  width: 400px;
-  height: 100px;
-} */
 /* footer------------------------------------------------------------------------------- */
 
 footer {
@@ -591,6 +580,11 @@ footer {
   position: relative;
 }
 
+.resep h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
 .resep_form {
   text-align: left;
   margin-left: 450px;
@@ -600,7 +594,9 @@ footer {
   border: black solid 1.5px;
   border-radius: inherit;
   margin-bottom: 40px;
+  margin-right: 10px;
   padding: 15px;
+  min-width: 290px;
 }
 
 .upresep {
@@ -651,21 +647,85 @@ footer {
 }
 /* isi resep---------------------------------------------------------------------------- */
 .isi_resep {
-  text-align: left;
-  margin-left: 400px;
+  background: #e2e1df;
+  padding: 100px;
+  text-align: center;
 }
 
-.resep_kiri {text-align: left;}
-.resep_kiri h1 {font-size: 30px}
-.resep_kiri img {
+.isi_resep h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.isi_kiri p {font-size: 20px;}
+
+.isi_resep img {
   height: 500px;
-  width: 300px;
+  width: 500px;
 }
 
-.resep_kanan {
-  padding-left: 350px;
-  padding-right: 100px;
-  top: -500px;
+.feedback {
+  background: #2a2a2a;
+  background: #2A2A2A;
+  text-align: center;
+  padding: 10px;
+}
+
+.fav {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 100px;
+  padding: 8px 0px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.fav:link {
+  background: #2a2a2a;
+  border: white solid 1px;
+  color: white;
+}
+
+.fav:visited {
+  background: #e3d105;
+  border: #e3d105 solid 1px;
+  color: black;
+}
+
+.fav:hover {
+  background: #e3d105;
+  border: #e3d105 solid 1px;
+  color: black;
+}
+
+.fav:active {
+  background: #e3d105;
+  border: #e3d105 solid 1px;
+  color: black;
+}
+
+.bcomment {
+  display: inline-block;
+  margin: 0 auto;
+  background: #2a2a2a;
+  border: white solid 1px;
+  color: white;
+  max-width: 100px;
+  padding: 8px 0px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.bcomment:hover {
+  background: #e3d105;
+  border: #e3d105 solid 1px;
+  color: black;
+}
+
+.comment {
+  background: #e2e1df;
+  padding: 50px;
+  text-align: center;
 }
 /* list resep---------------------------------------------------------------------- */
 .list_resep {
