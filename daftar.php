@@ -20,7 +20,7 @@ if(isset($_POST['daftar'])){
 		VALUES ('','$username','$email', '$password1','$username')";
 		mysqli_query($conn,$query);
 		if(mysqli_affected_rows($conn)>0) {
-			header('Location: index.php?status=sukses');
+			header('Location: index2.php?status=sukses');
 		} else {
 			echo "<script>alert('gagal membuat akun');history.go(-1)</script>";
 		}
