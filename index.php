@@ -14,7 +14,7 @@
 						<ul class="button_user">
               <input class="search" type="text" placeholder="Cari Resep">
 							<a href="search.php"><img class="isearch" src="img/isearch.png" alt=""></a>
-							<a href="index.php"><button class="blogin" for="Buat Resep">Buat Resep</button></a>
+							<a href="upresep.php"><button class="blogin">Buat Resep</button></a>
               <a href="profil.php"> <img class="profil" src="img/profil.png" alt=""> </a>
 						</ul>
 				</div>
@@ -43,7 +43,7 @@
 		<div class="resep">
 			<div class="resep_form">
 				<form action="recipe.php" method="post">
-					<input class="rform" type="text" id="Judul Resep" placeholder="Judul Resep">
+					<input class="rform" type="text" placeholder="Judul Resep">
 
 					<div class="gambar">
 							<label class="upresep"><input type="file" value="upload">Upload Foto</label>
