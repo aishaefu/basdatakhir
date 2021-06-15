@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Snackie</title>
+		<title>Buat Resep | Snackie</title>
 		<link rel="stylesheet" href="style.css">
 
 	</head>
