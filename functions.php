@@ -1,10 +1,10 @@
 <?php 
 //koneksi ke database
-$db = mysqli_connect("localhost", "root", "", "phpdasar");
+$conn = mysqli_connect("localhost", "root", "", "phpdasar");
 
 function query($query) {
-    global $db;
-    $result = mysqli_query($db, $query);
+    global $conn;
+    $result = mysqli_query($conn, $query);
     $rows = [];
     while( $row = mysqli_fetch_assoc($result) ) {
         $rows[] = $row;
@@ -13,7 +13,7 @@ function query($query) {
 }
 
 function tambah($data) {
-    global $db;
+    global $conn;
     //ambil data dari tiap elemen dalam form
     //htmlspecialchars() supaya ituu ga ke hack intinya :'D
     $name = htmlspecialchars($data["name"]);
@@ -30,9 +30,9 @@ function tambah($data) {
     //query insert data
     $query = "INSERT INTO mahasiswa VALUES (
         '', '$name', '$nim', '$email', '$jurusan', '$gambar')";
-    mysqli_query($db, $query);
+    mysqli_query($conn, $query);
 
-    return mysqli_affected_rows($db);
+    return mysqli_affected_rows($conn);
 }
 
 function upload() {
@@ -79,14 +79,14 @@ function upload() {
 }
 
 function hapus($id) {
-    global $db;
-    mysqli_query($db, "DELETE FROM mahasiswa WHERE id = $id");
+    global $conn;
+    mysqli_query($conn, "DELETE FROM mahasiswa WHERE id = $id");
 
-    return mysqli_affected_rows($db);
+    return mysqli_affected_rows($conn);
 }
 
 function ubah($data) {
-    global $db;
+    global $conn;
 
     $id = $data["id"];
     //ambil data dari tiap elemen dalam form
@@ -115,9 +115,9 @@ function ubah($data) {
             WHERE id = $id
         ";
 
-    mysqli_query($db, $query);
+    mysqli_query($conn, $query);
 
-    return mysqli_affected_rows($db);
+    return mysqli_affected_rows($conn);
 }
 
 function cari($keyword) {
@@ -133,16 +133,16 @@ function cari($keyword) {
 //% untuk mencari nama dengan fleksibel
 
 function registrasi($data) {
-    global $db;
+    global $conn;
 
     $username = strtolower(stripslashes($data["username"]));
-    $password = mysqli_real_escape_string($db, $data["password"]);
-    $password2 = mysqli_real_escape_string($db, $data["password2"]);
+    $password = mysqli_real_escape_string($conn, $data["password"]);
+    $password2 = mysqli_real_escape_string($conn, $data["password2"]);
     //untuk memungkinkan user masukkin pass ada tanda kutip & tanda kutip
-    //dimasukkan ke db scr aman
+    //dimasukkan ke conn scr aman
 
     //username udah ada/belom
-    $result = mysqli_query($db, "SELECT username FROM user WHERE
+    $result = mysqli_query($conn, "SELECT username FROM user WHERE
     username = '$username'");
     if( mysqli_fetch_assoc($result) ) {
         echo "<script>
