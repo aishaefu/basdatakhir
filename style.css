@@ -1,21 +1,32 @@
+/* body general -------------------------------------------------------------------- */
 body {
   font-family: Century Gothic;
   color: black;
   margin: 0 0 0 0;
-  /* background: white; */
-  background: url('background1.jpg');
+  /* background: url('background1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; */
 }
-/* ------------------------------------------------------------------------- */
+/* header general ------------------------------------------------------------------------- */
 
 header{
   background: #2A2A2A;
-  padding : 20px;
+  padding : 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  max-height: 55px;
+  z-index: 5;
 }
-/* ---------------------------------------------------------------------------- */
+/* right header after login---------------------------------------------------------------------------- */
 
 .right_header {
   float: right;
@@ -48,7 +59,7 @@ header{
   margin: -13px 10px;
 }
 
-/* -------------------------------------------------------------------------- */
+/* right header before login-------------------------------------------------------------------------- */
 
 .topform {
   float: left;
@@ -78,82 +89,268 @@ header{
   background: #2a2a2a;
   color: white;
 }
+/* side------------------------------------------------------------------------------- */
 
-/* .bdaftar {
+.side {
+  background: #2a2a2a;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  min-width: 230px;
+  padding-top: 100px;
+  z-index: 3;
+}
+
+.logout {
   float: left;
   display: block;
+  font-family: Century Gothic;
   color: white;
   font-size: 15px;
-  line-height: 38px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 50px;
   position: relative;
-  top: -7px;
-  padding: 0 15px;
-  margin: 0 5px;
-  border: solid white 1px;
+  top: -15px;
+  padding: 0 30px;
+  border: none;
   background: #2a2a2a;
+  width: 105%;
+  margin-left: -1px;
 }
 
-.bdaftar:hover {
-  border: #e3d105 solid 1px;
-  background: #e3d105;
-  color: black;
-} */
-
-/* --------------------------------------------------------------------- */
-
-.title {
-  letter-spacing: 10px;
-  text-align: center;
-  background: #e3d105;
-  padding: 50px;
-}
-
-.body {
-  text-align: center;
-  padding: 100px 80px 100px 80px;
-  /* background: url('background1.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative; */
-}
-
-.welcome_word {
-  font-size: 30px;
-}
-
-input[type="file"] {
-  display: none;
-}
-
-.upload {
-  font-family: Arial;
-  display: block;
-  margin: 0 auto;
-  background: #2A2A2A;
-  border: #2a2a2a;
+.logout:hover {
+  background: red;
   color: white;
-  max-width: 100px;
-  padding: 8px 0px;
-  width: 100%;
+}
+/* side profil---------------------------------------------------------------------- */
+
+.p_myaccount {
+  float: left;
+  display: block;
+  font-family: Century Gothic;
+  color: black;
   font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: -15px;
+  padding: 0 30px;
+  border: none;
+  background: #e3d105;
+  width: 105%;
+  margin-left: -1px;
 }
 
-.upload:hover {
+.p_myaccount:hover {
+  background: #2a2a2a;
+  color: white;
+}
+
+.p_myrecipes {
+  float: left;
+  display: block;
+  font-family: Century Gothic;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: -15px;
+  padding: 0 30px;
+  border: none;
+  background: #2a2a2a;
+  width: 105%;
+  margin-left: -1px;
+}
+
+.p_myrecipes:hover {
   background: #e3d105;
   color: black;
 }
+
+.p_myfav {
+  float: left;
+  display: block;
+  font-family: Century Gothic;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: -15px;
+  padding: 0 30px;
+  border: none;
+  background: #2a2a2a;
+  width: 105%;
+  margin-left: -1px;
+}
+
+.p_myfav:hover {
+  background: #e3d105;
+  color: black;
+}
+/* side myrecipes---------------------------------------------------------------------- */
+
+.r_myrecipes {
+  float: left;
+  display: block;
+  font-family: Century Gothic;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: -15px;
+  padding: 0 30px;
+  border: none;
+  background: #e3d105;
+  width: 105%;
+  margin-left: -1px;
+}
+
+.r_myrecipes:hover {
+  background: #2a2a2a;
+  color: white;
+}
+
+.r_myaccount {
+  float: left;
+  display: block;
+  font-family: Century Gothic;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: -15px;
+  padding: 0 30px;
+  border: none;
+  background: #2a2a2a;
+  width: 105%;
+  margin-left: -1px;
+}
+
+.r_myaccount:hover {
+  background: #e3d105;
+  color: black;
+}
+
+.r_myfav {
+  float: left;
+  display: block;
+  font-family: Century Gothic;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: -15px;
+  padding: 0 30px;
+  border: none;
+  background: #2a2a2a;
+  width: 105%;
+  margin-left: -1px;
+}
+
+.r_myfav:hover {
+  background: #e3d105;
+  color: black;
+}
+/* side myfav---------------------------------------------------------------------- */
+
+.f_myfav {
+  float: left;
+  display: block;
+  font-family: Century Gothic;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: -15px;
+  padding: 0 30px;
+  border: none;
+  background: #e3d105;
+  width: 105%;
+  margin-left: -1px;
+}
+
+.f_myfav:hover {
+  background: #2a2a2a;
+  color: white;
+}
+
+.f_myaccount {
+  float: left;
+  display: block;
+  font-family: Century Gothic;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: -15px;
+  padding: 0 30px;
+  border: none;
+  background: #2a2a2a;
+  width: 105%;
+  margin-left: -1px;
+}
+
+.f_myaccount:hover {
+  background: #e3d105;
+  color: black;
+}
+
+.f_myrecipes {
+  float: left;
+  display: block;
+  font-family: Century Gothic;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: -15px;
+  padding: 0 30px;
+  border: none;
+  background: #2a2a2a;
+  width: 105%;
+  margin-left: -1px;
+}
+
+.f_myfav:recipes {
+  background: #e3d105;
+  color: black;
+}
+/* form general--------------------------------------------------------------------- */
 
 .form {
   border: white solid 2px;
   border-radius: inherit;
   margin-bottom: 25px;
   padding: 15px;
-}
-
-h3 {
-  font-size: 15px;
-  text-align: center;
 }
 
 .textarea {
@@ -165,6 +362,10 @@ h3 {
   padding: 15px;
   width: 400px;
   height: 100px;
+}
+
+input[type="file"] {
+  display: none;
 }
 
 .send {
@@ -183,9 +384,230 @@ h3 {
   background: #e3d105;
   color: black;
 }
+/* background 1--------------------------------------------------------------------- */
 
-.ysend {
-  display: block;
+.body {
+  text-align: center;
+  padding: 200px 80px 100px 80px;
+  background: url('background1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.word_daftar {
+  font-size: 30px;
+}
+
+.welcome_word {
+  /* font-size: 50px;
+  text-align: left; */
+  /* position: fixed; */
+  margin-left: 150px;
+  margin-right: 300px;
+  text-spacing: 5px;
+}
+
+.welcome {
+  font-size: 50px;
+  text-align: left;
+}
+
+.user {
+  font-size: 100px;
+  text-align: right;
+}
+/* profil------------------------------------------------------------------------- */
+
+.userprofil {
+  background: #e3d105;
+  text-align: center;
+  padding-top: 150px;
+  padding-right: 300px;
+  padding-bottom: 50px;
+}
+
+.foto {
+  border-radius: 100px 100px;
+  margin-bottom: -10px;
+}
+
+.profile_name h1 {
+  font-size: 30px;
+}
+
+.profile_name h3 {font-size: 20px;}
+
+.userprofil p {font-size: 15px;}
+
+.upload {
+  font-family: Arial;
+  display: inline-block;
+  margin: 10px auto;
+  background: #2A2A2A;
+  border: #2a2a2a;
+  color: white;
+  max-width: 100px;
+  padding: 8px 0px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.upload:hover {
+  background: #e3d105;
+  color: black;
+}
+
+.delete {
+  display: inline-block;
+  margin: 20px auto;
+  background: #2a2a2a;
+  border: #2a2a2a;
+  color: white;
+  max-width: 100px;
+  padding: 8px 0px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.delete:hover {
+  background: red;
+  color: white;
+}
+
+.formedit {
+  border: white solid 2px;
+  border-radius: inherit;
+  margin-bottom: 25px;
+  padding: 15px;
+  min-width: 400px;
+}
+
+/* .edittextarea {
+  font-family: Arial;
+  font-size: 15px;
+  border: white solid 2px;
+  border-radius: inherit;
+  margin-bottom: 25px;
+  padding: 15px;
+  width: 400px;
+  height: 100px;
+} */
+/* footer------------------------------------------------------------------------------- */
+
+footer {
+  text-align: center;
+  background: #2a2a2a;
+  padding: 15px;
+  padding-right: 300px;
+}
+
+.ebutton {
+  align: center;
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+  line-height: 38px;
+  position: relative;
+  padding: 0 15px;
+  margin: 0 5px;
+  border: solid #e3d105 1px;
+  background: #e3d105;
+}
+
+.ebutton:hover {
+  border: white solid 1px;
+  background: #2a2a2a;
+  color: white;
+}
+
+.dbutton {
+  align: center;
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  line-height: 38px;
+  position: relative;
+  padding: 0 15px;
+  margin: 0 5px;
+  border: solid white 1px;
+  background: #2a2a2a;
+}
+
+.dbutton:hover {
+  border: red solid 1px;
+  background: red;
+  color: white;
+}
+/* body resep--------------------------------------------------------------------- */
+
+.welcome_resep {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  background: #2a2a2a;
+  /* background: #e3d105; */
+  padding-top: 100px;
+  padding-bottom: 30px;
+  letter-spacing: 5px;
+}
+
+.resep {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* padding-right: -100px; */
+  background: url('background2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.resep_form {
+  text-align: left;
+  margin-left: 450px;
+}
+
+.rform {
+  border: black solid 1.5px;
+  border-radius: inherit;
+  margin-bottom: 40px;
+  padding: 15px;
+}
+
+.upresep {
+  font-family: Arial;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  background: #2A2A2A;
+  border: #2a2a2a;
+  color: white;
+  max-width: 100px;
+  padding: 8px 0px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.upresep:hover {
+  background: #e3d105;
+  color: black;
+}
+
+.rtextarea {
+  font-family: Arial;
+  font-size: 15px;
+  border: black solid 1.5px;
+  border-radius: inherit;
+  margin-bottom: 25px;
+  padding: 15px;
+  width: 400px;
+  height: 200px;
+}
+
+.rsend {
+  display: inline-block;
   margin: 0 auto;
   background: #e3d105;
   border: #e3d105;
@@ -196,11 +618,59 @@ h3 {
   font-size: 15px;
 }
 
-.ysend:hover {
+.rsend:hover {
   background: #2a2a2a;
   color: white;
 }
-/* ---------------------------------------------------------------------- */
+/* isi resep---------------------------------------------------------------------------- */
+.isi_resep {
+  text-align: left;
+  margin-left: 400px;
+}
+
+.resep_kiri {text-align: left;}
+.resep_kiri h1 {font-size: 30px}
+.resep_kiri img {
+  height: 500px;
+  width: 300px;
+}
+
+.resep_kanan {
+  padding-left: 350px;
+  padding-right: 100px;
+  top: -500px;
+}
+/* list resep---------------------------------------------------------------------- */
+.list_resep {
+  background: url('background2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150%;
+  width: 150%;
+  position: fixed;
+  left: 0;
+}
+/* about-------------------------------------------------------------------- */
+
+.about {
+  letter-spacing: 5px;
+  /* position: static;
+  top: 350px; */
+  background: #2A2A2A;
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+  color: white;
+  z-index: 4;
+}
+
+.body_about {
+  background: #e3d105;
+  text-align: center;
+  padding: 30px;
+  z-index: 4;
+}
+/* link---------------------------------------------------------------------------------- */
 
 h a:link {
   color: black;
@@ -218,25 +688,6 @@ h a:active {
   color: black;
   text-decoration: none;
 }
-/* -------------------------------------------------------------------- */
-
-.about {
-  letter-spacing: 5px;
-  /* position: static;
-  top: 350px; */
-  background: #2A2A2A;
-  text-align: center;
-  padding: 10px;
-  font-size: 10px;
-  color: white;
-}
-
-.body_about {
-  background: #e3d105;
-  text-align: center;
-  padding: 30px;
-}
-/* --------------------------------------------------------------------- */
 
 a:link {
   color: white;
