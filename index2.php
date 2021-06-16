@@ -87,8 +87,8 @@ $result = mysqli_query($conn, "SELECT * FROM resep");
 	            <div class="col col-3" data-label="Waktu"><?php echo $row["Content"]; ?></div>
 	            <div class="col col-4" data-label="Aksi">
 	              <div class="td">
-	                <a href="editresep.php?id=<?php echo $row["ID"] ?>" class="td btn-5">Edit</a>
-	                <a href="hapus.php?id=<?php echo $row["ID"] ?> " class="td btn-6">Delete</a>
+	                <a href="editresep.php?id=<?php echo $row["ID"] ?" class="td btn-5">Edit</a>
+	                <a href="hapus.php?id=<?php echo $row["ID"] ? " class="td btn-6">Delete</a>
 	              </div>
 	            </div>
 	          </li>
@@ -104,7 +104,7 @@ $result = mysqli_query($conn, "SELECT * FROM resep");
 			<h2>tentang snackie</h2>
 		</div>
 
-		<div class="ibody_about">
+		<div class="body_about">
 			<p>Snackie adalah sebuah web untuk berbagi resep makanan ringan.
 				<br>
 				Pengguna dapat login untuk bisa membagikan, memilih resep favorit,
