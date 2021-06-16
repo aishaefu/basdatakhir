@@ -15,7 +15,7 @@ if(isset($_POST["login"])){
     //cek password
     $row = mysqli_fetch_assoc($result);
     if($password == $row["Password"]){
-			header("Location:index.php");
+			header("Location:index2.php");
 			exit;
     } else {
       echo "<script>alert('gagal masuk');history.go(-1)</script>";
