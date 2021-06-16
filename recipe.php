@@ -1,57 +1,31 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Resep | Snackie</title>
-		<link rel="stylesheet" href="style.css">
+<?php
+session_start();
+require 'functions.php';
 
-	</head>
-	<body>
-		<header>
-			<div class="heading">
-				<a href="index.php"><img src="img/logo.png" alt=""></a>
+if(!isset($_SESSION["login"])){
+	header("Location:form.php");
+	exit;
+}
+$conn=mysqli_connect("localhost", "root","","snackie");
+// ambil data query database
+$result = mysqli_query($conn, "SELECT * FROM resep");
 
-				<div class="right_header">
-						<ul class="button_user">
-              <input class="search" type="text" placeholder="Cari Resep">
-							<a href="search.php"><img class="isearch" src="img/isearch.png" alt=""></a>
-							<a href="upresep.php"><button class="blogin">Buat Resep</button></a>
-              <a href="profil.php"> <img class="profil" src="img/profil.png" alt=""> </a>
-						</ul>
-				</div>
+// cek apakah tombol daftar sudah diklik atau blum?
+if(isset($_POST['unggah'])){
 
-			</div>
-		</header>
+	// ambil data dari formulir
+	$judul = htmlspecialchars($_POST['judul']);
+	$username = htmlspecialchars($_POST['username']);
+	$content = htmlspecialchars($_POST['content']);
 
-		<div class="isi_resep">
-			<h2>Judul Resep</h2>
-			<br>
-			<img src="img/recipe.jpg" alt="">
-			<br>
-			<p>Bagian ini merupakan isi resepnya</p>
-		</div>
-
-		<div class="feedback">
-			<a href="#"><button class="fav" type="button">Favorit</button></a>
-			<label class="bcomment" for="komen">Comment</label>
-		</div>
-
-		<div class="comment">
-			<textarea class="textarea" name="name" id="komen">Berikan tanggapanmu di sini</textarea>
-			<br>
-			<a href="#"><button class="rsend" type="button" name="button">Kirim</button></a>
-		</div>
-
-		<div class="about">
-			<h2>tentang snackie</h2>
-		</div>
-
-		<div class="body_about">
-			<p>Snackie adalah sebuah web untuk berbagi resep makanan ringan.
-				<br>
-				Pengguna dapat login untuk bisa membagikan, memilih resep favorit,
-				serta berinteraksi dengan pengguna lainnya.
-			</p>
-		</div>
-
-	</body>
-</html>
+ //cek password1 dan $password2
+		$query="INSERT INTO resep (ID, Name, Owner, Content)
+		VALUES ('','$judul','$username', '$content')";
+		mysqli_query($conn,$query);
+		if(mysqli_affected_rows($conn)>0) {
+			header('Location: index2.php?status=sukses');
+		} else {
+			echo "<script>alert('gagal menambahkan resep');history.go(-1)</script>";
+		}
+	}
+?>
