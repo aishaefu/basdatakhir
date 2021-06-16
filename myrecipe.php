@@ -7,7 +7,7 @@
   <body>
     <header>
       <div class="heading">
-        <a href="index.php"><img src="img/logo.png" alt="" /></a>
+        <a href="index2.php"><img src="img/logo.png" alt="" /></a>
 
         <div class="right_header">
           <ul class="button_user">
