@@ -147,7 +147,7 @@ section {
   border: none;
   background: #2a2a2a;
   width: 105%;
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .logout:hover {
@@ -172,7 +172,7 @@ section {
   border: none;
   background: #e3d105;
   width: 105%;
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .p_myaccount:hover {
@@ -196,7 +196,7 @@ section {
   border: none;
   background: #2a2a2a;
   width: 105%;
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .p_myrecipes:hover {
@@ -220,7 +220,7 @@ section {
   border: none;
   background: #2a2a2a;
   width: 105%;
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .p_myfav:hover {
@@ -245,7 +245,7 @@ section {
   border: none;
   background: #e3d105;
   width: 105%;
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .r_myrecipes:hover {
@@ -269,7 +269,7 @@ section {
   border: none;
   background: #2a2a2a;
   width: 105%;
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .r_myaccount:hover {
@@ -293,7 +293,7 @@ section {
   border: none;
   background: #2a2a2a;
   width: 105%;
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .r_myfav:hover {
@@ -318,7 +318,7 @@ section {
   border: none;
   background: #e3d105;
   width: 105%;
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .f_myfav:hover {
@@ -342,7 +342,7 @@ section {
   border: none;
   background: #2a2a2a;
   width: 105%;
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .f_myaccount:hover {
@@ -366,7 +366,7 @@ section {
   border: none;
   background: #2a2a2a;
   width: 105%;
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .f_myfav:recipes {
@@ -570,8 +570,7 @@ footer {
   color: white;
   background: #2a2a2a;
   /* background: #e3d105; */
-  padding-top: 100px;
-  padding-bottom: 30px;
+  padding: 10px;
   letter-spacing: 5px;
 }
 
