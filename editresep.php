@@ -1,3 +1,24 @@
+<?php
+require 'functions.php';
+
+$id=$_GET["id"];
+$resep=query("SELECT * FROM resep WHERE id=$id")[0];
+
+if(isset($_POST['ubah'])) {
+	$id=$_POST["id"];
+	$judul=$_POST["judul"];
+	$content=$_POST["content"];
+
+	$update=	mysqli_query($conn,"UPDATE resep SET Name='$judul', Content='$content' WHERE id=$id");
+
+	if($update) {
+		header('Location: index2.php?status=dirubah');
+	} else {
+		echo "<script>alert('gagal merubah resep');history.go(-1)</script>";
+	}
+}
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -26,15 +47,16 @@
 			<h1>Koreksi resep</h1>
 
 			<div class="resep_form">
-				<form action="recipe.php" method="post">
-					<input class="rform" type="text" placeholder="Judul Resep">
+				<form action="" method="post">
+					<input type="hidden" name="id" value="<?php echo $resep["ID"] ?>">
+					<input class="rform" type="text" placeholder="Judul Resep" name="judul" value="<?php echo $resep["Name"] ?>">
 
 					<label class="upresep"><input type="file" value="upload">Unggah Foto</label>
 
 					<br>
-					<textarea class="rtextarea" type="text" placeholder="Tulis resepmu di sini"></textarea>
+					<input class="rtextarea" type="text" placeholder="Tulis resepmu di sini" name="content" value="<?php echo $resep["Content"] ?>"></input>
 					<br>
-					<a href="recipe.php"><button class="rsend">Unggah</button></a>
+					<button class="rsend" type="submit" name="ubah">Ubah</button>
 				</form>
 			</div>
 		</div>
