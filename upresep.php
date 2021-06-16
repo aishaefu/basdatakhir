@@ -27,14 +27,15 @@
 
 			<div class="resep_form">
 				<form action="recipe.php" method="post">
-					<input class="rform" type="text" placeholder="Judul Resep">
+					<input class="rform" type="text" placeholder="Judul Resep" name="judul">
 
 					<label class="upresep"><input type="file" value="upload">Unggah Foto</label>
-
 					<br>
-					<textarea class="rtextarea" type="text" placeholder="Tulis resepmu di sini"></textarea>
+					<input class="rform" type="text" id="upresep" placeholder="username" name="username">
 					<br>
-					<a href="recipe.php"><button class="rsend">Unggah</button></a>
+					<textarea class="rtextarea" type="text" placeholder="Tulis resepmu di sini" name="content"></textarea>
+					<br>
+					<a href="recipe.php"><button class="rsend" type="submit" name="unggah">Unggah</button></a>
 				</form>
 			</div>
 		</div>
