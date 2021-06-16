@@ -1,11 +1,7 @@
 <?php
-session_start();
+
 require 'functions.php';
 
-if(!isset($_SESSION["login"])){
-	header("Location:form.php");
-	exit;
-}
 $conn=mysqli_connect("localhost", "root","","snackie");
 // ambil data query database
 $result = mysqli_query($conn, "SELECT * FROM resep");
