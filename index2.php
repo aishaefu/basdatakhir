@@ -4,7 +4,7 @@ $conn=mysqli_connect("localhost", "root","","snackie");
 
 session_start();
 if( !isset($_SESSION["login"]) ) {
-    header("Location: login.php");
+    header("Location: form.php");
     exit;
 }
 
