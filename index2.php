@@ -31,7 +31,7 @@
 					</div>
 					<br>
 					<div class="user">
-						user!
+						<span class="type-animation animating">user!</span>
 					</div>
  				</h1>
 			</div>
@@ -57,12 +57,77 @@
 				</form>
 			</div>
 		</div>
+	
+			<div class="rtitle">
+			<h1>Resep Saya</h1>
+			<!-- <h1><span class="type-animation animating">Resep Saya</span></h1> -->
+		</div>
+
+		<div class="tabelresep">
+			<div class="tbody">
+	      <div class="container">
+	        <ul class="responsive-table">
+	          <li class="table-header">
+	            <div class="col col-1">No.</div>
+	            <div class="col col-2">Judul Resep</div>
+	            <div class="col col-3">Waktu Pembuatan</div>
+	            <div class="col col-4"></div>
+	          </li>
+	          <li class="table-row">
+	            <div class="col col-1" data-label="No">1</div>
+	            <div class="col col-2" data-label="Judul Resep"></div>
+	            <div class="col col-3" data-label="Waktu"></div>
+	            <div class="col col-4" data-label="Aksi">
+	              <div class="td">
+	                <a href="" class="td btn-5">Edit</a>
+	                <a href="" class="td btn-6">Delete</a>
+	              </div>
+	            </div>
+	          </li>
+	          <li class="table-row">
+	            <div class="col col-1" data-label="No">2</div>
+	            <div class="col col-2" data-label="Judul Resep"></div>
+	            <div class="col col-3" data-label="Waktu"></div>
+	            <div class="col col-4" data-label="Aksi">
+	              <div class="td">
+	                <a href="" class="td btn-5">Edit</a>
+	                <a href="" class="td btn-6">Delete</a>
+	              </div>
+	            </div>
+	          </li>
+	          <li class="table-row">
+	            <div class="col col-1" data-label="No">3</div>
+	            <div class="col col-2" data-label="Judul Resep"></div>
+	            <div class="col col-3" data-label="Waktu"></div>
+	            <div class="col col-4" data-label="Aksi">
+	              <div class="td">
+	                <a href="" class="td btn-5">Edit</a>
+	                <a href="" class="td btn-6">Delete</a>
+	              </div>
+	            </div>
+	          </li>
+	          <li class="table-row">
+	            <div class="col col-1" data-label="No">4</div>
+	            <div class="col col-2" data-label="Judul Resep"></div>
+	            <div class="col col-3" data-label="Waktu"></div>
+	            <div class="col col-4" data-label="Aksi">
+	              <div class="td">
+	                <a href="" class="td btn-5">Edit</a>
+	                <a href="" class="td btn-6">Delete</a>
+	              </div>
+	            </div>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+		</div>
+
 
 		<div class="about">
 			<h2>tentang snackie</h2>
 		</div>
 
-		<div class="body_about">
+		<div class="ibody_about">
 			<p>Snackie adalah sebuah web untuk berbagi resep makanan ringan.
 				<br>
 				Pengguna dapat login untuk bisa membagikan, memilih resep favorit,
