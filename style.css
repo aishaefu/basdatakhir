@@ -16,9 +16,9 @@ body {
 }
 /* header general ------------------------------------------------------------------------- */
 
-header{
-  background: #2A2A2A;
-  padding : 15px;
+header {
+  background: #2a2a2a;
+  padding: 15px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -39,7 +39,7 @@ header{
   border: white solid 2px;
   border-radius: inherit;
   margin: -5px -10px;
-  padding: 8px 15px
+  padding: 8px 15px;
 }
 
 .isearch {
@@ -50,7 +50,9 @@ header{
   padding: 7.5px 8px;
 }
 
-.isearch:hover {background: #e3d105}
+.isearch:hover {
+  background: #e3d105;
+}
 
 .profil {
   border-radius: 30px 30px;
@@ -391,14 +393,14 @@ section {
   height: 100px;
 }
 
-input[type="file"] {
+input[type='file'] {
   display: none;
 }
 
 .send {
   display: block;
   margin: 0 auto;
-  background: #2A2A2A;
+  background: #2a2a2a;
   border: #2a2a2a;
   color: white;
   max-width: 100px;
@@ -432,8 +434,8 @@ input[type="file"] {
   text-align: left; */
   /* position: fixed; */
   margin-left: 150px;
-  margin-right: 300px;
-  text-spacing: 5px;
+  margin-right: 150px;
+  letter-spacing: 5px;
 }
 
 .welcome {
@@ -464,15 +466,19 @@ input[type="file"] {
   font-size: 30px;
 }
 
-.profile_name h3 {font-size: 20px;}
+.profile_name h3 {
+  font-size: 20px;
+}
 
-.userprofil p {font-size: 15px;}
+.userprofil p {
+  font-size: 15px;
+}
 
 .upload {
   font-family: Arial;
   display: inline-block;
   margin: 10px auto;
-  background: #2A2A2A;
+  background: #2a2a2a;
   border: #2a2a2a;
   color: white;
   max-width: 100px;
@@ -520,7 +526,7 @@ footer {
 }
 
 .ebutton {
-  align: center;
+  text-align: center;
   display: inline-block;
   color: black;
   font-size: 15px;
@@ -539,7 +545,7 @@ footer {
 }
 
 .dbutton {
-  align: center;
+  text-align: center;
   display: inline-block;
   color: white;
   font-size: 15px;
@@ -604,7 +610,7 @@ footer {
   text-align: center;
   display: inline-block;
   margin: 0 auto;
-  background: #2A2A2A;
+  background: #2a2a2a;
   border: #2a2a2a;
   color: white;
   max-width: 100px;
@@ -657,7 +663,9 @@ footer {
   margin-bottom: 10px;
 }
 
-.isi_kiri p {font-size: 20px;}
+.isi_kiri p {
+  font-size: 20px;
+}
 
 .isi_resep img {
   height: 500px;
@@ -666,7 +674,7 @@ footer {
 
 .feedback {
   background: #2a2a2a;
-  background: #2A2A2A;
+  background: #2a2a2a;
   text-align: center;
   padding: 10px;
 }
@@ -743,7 +751,7 @@ footer {
   letter-spacing: 5px;
   /* position: static;
   top: 350px; */
-  background: #2A2A2A;
+  background: #2a2a2a;
   text-align: center;
   padding: 10px;
   font-size: 10px;
@@ -832,7 +840,7 @@ a:active {
 }
 
 .type-animation:after {
-  content: "";
+  content: '';
   background: var(--primary);
   position: absolute;
   right: 0;
@@ -993,7 +1001,6 @@ a:active {
   background-color: transparent;
 }
 
-
 main.tbody {
   /* font-family: "Open Sans", sans-serif; */
   font-weight: bolder;
@@ -1022,7 +1029,6 @@ main.tbody {
   margin: 20px 0;
   text-align: center;
 }
-
 h2 small {
   font-size: 0.5em;
 } */
