@@ -79,8 +79,8 @@ $result = mysqli_query($conn, "SELECT * FROM resep");
 	            <div class="col col-3">Langkah Pembuatan</div>
 	            <div class="col col-4"></div>
 	          </li>
-						<?php $i=1; ?>
-						<?php while($row=mysqli_fetch_assoc($result)): ?>
+<?php $i=1; ?>
+<?php while($row=mysqli_fetch_assoc($result)): ?>
 	          <li class="table-row">
 	            <div class="col col-1" data-label="No"><?php echo $i; ?></div>
 	            <div class="col col-2" data-label="Judul Resep"><?php echo $row["Name"]; ?></div>
@@ -88,12 +88,12 @@ $result = mysqli_query($conn, "SELECT * FROM resep");
 	            <div class="col col-4" data-label="Aksi">
 	              <div class="td">
 	                <a href="" class="td btn-5">Edit</a>
-	                <a href="hapus.php?id=<?php echo $row="id" ?>" class="td btn-6">Delete</a>
+	                <a href="hapus.php?id=<?php echo $row["ID"] ?> " class="td btn-6">Delete</a>
 	              </div>
 	            </div>
 	          </li>
-						<?php $i++ ?>
-      			<?php endwhile; ?>
+<?php $i++ ?>
+<?php endwhile; ?>
 	        </ul>
 	      </div>
 	    </div>
