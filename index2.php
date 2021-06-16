@@ -2,9 +2,16 @@
 //konek database
 $conn=mysqli_connect("localhost", "root","","snackie");
 
-// ambil data dari tabel mahasiswa / query database
+session_start();
+if( !isset($_SESSION["login"]) ) {
+    header("Location: login.php");
+    exit;
+}
+
+// ambil data dari tabel resep / query database
 $result = mysqli_query($conn, "SELECT * FROM resep");
  ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
