@@ -55,6 +55,7 @@
               <div class="td">
                 <a href="" class="td btn-5">Edit</a>
                 <a href="" class="td btn-6">Delete</a>
+                <a href="" class="td btn-7">Favorit</a>
               </div>
             </div>
           </li>
@@ -66,6 +67,7 @@
               <div class="td">
                 <a href="" class="td btn-5">Edit</a>
                 <a href="" class="td btn-6">Delete</a>
+                <a href="" class="td btn-7">Favorit</a>
               </div>
             </div>
           </li>
@@ -77,6 +79,7 @@
               <div class="td">
                 <a href="" class="td btn-5">Edit</a>
                 <a href="" class="td btn-6">Delete</a>
+                <a href="" class="td btn-7">Favorit</a>
               </div>
             </div>
           </li>
@@ -88,6 +91,7 @@
               <div class="td">
                 <a href="" class="td btn-5">Edit</a>
                 <a href="" class="td btn-6">Delete</a>
+                <a href="" class="td btn-7">Favorit</a>
               </div>
             </div>
           </li>
