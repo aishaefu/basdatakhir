@@ -29,7 +29,7 @@
 			<br>
 			<a href="myfav.php"><button class="p_myfav" type="button">Favorit Saya</button></a>
 			<br>
-			<a href="form.php"><button class="logout" type="button">Keluar</button></a>
+			<a href="logout.php"><button class="logout" type="button">Keluar</button></a>
 		</div>
 
 		<div class="userprofil">
