@@ -805,6 +805,16 @@ a:active {
   border-color: white;
   background-color: transparent;
 }
+.btn-7 {
+  background-color: #e0d344;
+  margin-left: 20px;
+}
+.btn-7:hover {
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
+  color: black;
+  border-color: white;
+  background-color: transparent;
+}
 main.tbody {
   font-family: "Open Sans", sans-serif;
   background: #e3d105;
