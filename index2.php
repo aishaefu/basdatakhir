@@ -2,16 +2,9 @@
 //konek database
 $conn=mysqli_connect("localhost", "root","","snackie");
 
-session_start();
-if( !isset($_SESSION["login"]) ) {
-    header("Location: form.php");
-    exit;
-}
-
-// ambil data dari tabel resep / query database
+// ambil data dari tabel mahasiswa / query database
 $result = mysqli_query($conn, "SELECT * FROM resep");
  ?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -94,7 +87,7 @@ $result = mysqli_query($conn, "SELECT * FROM resep");
 	            <div class="col col-3" data-label="Waktu"><?php echo $row["Content"]; ?></div>
 	            <div class="col col-4" data-label="Aksi">
 	              <div class="td">
-	                <a href="" class="td btn-5">Edit</a>
+	                <a href="editresep.php?id=<?php echo $row["ID"] ?>" class="td btn-5">Edit</a>
 	                <a href="hapus.php?id=<?php echo $row["ID"] ?> " class="td btn-6">Delete</a>
 	              </div>
 	            </div>
