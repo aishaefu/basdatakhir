@@ -48,7 +48,7 @@
 				<br>
 				<textarea class="textarea" type="text" placeholder="Bio"></textarea>
 
-				<a href="profil.php"><button class="send">Simpan</button></a>
+				<a href="profil.php"><button class="send1">Simpan</button></a>
 			</form>
 		</div>
 
