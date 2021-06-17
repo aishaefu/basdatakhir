@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2021 at 04:54 PM
+-- Generation Time: Jun 17, 2021 at 02:34 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.7
 
@@ -26,111 +26,127 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `comment`
 --
--- Creation: Jun 13, 2021 at 12:43 PM
---
 
-CREATE TABLE IF NOT EXISTS `comment` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `comment` (
+  `ID` int(11) NOT NULL,
   `Resep_ID` int(11) NOT NULL,
   `User_ID` int(11) NOT NULL,
-  `Comment` text NOT NULL,
-  PRIMARY KEY (`ID`),
-  UNIQUE KEY `Resep_ID` (`Resep_ID`),
-  UNIQUE KEY `User_ID` (`User_ID`)
+  `Comment` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='nanti edit lagi';
-
---
--- RELATIONSHIPS FOR TABLE `comment`:
---   `Resep_ID`
---       `resep` -> `ID`
---   `User_ID`
---       `user` -> `ID`
---
 
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `favorite`
 --
--- Creation: Jun 13, 2021 at 01:30 PM
---
 
-CREATE TABLE IF NOT EXISTS `favorite` (
+CREATE TABLE `favorite` (
   `Resep_ID` int(11) NOT NULL,
   `User_ID` int(11) NOT NULL,
-  `Fav` varchar(250) NOT NULL,
-  UNIQUE KEY `Resep_ID` (`Resep_ID`),
-  UNIQUE KEY `User_ID` (`User_ID`),
-  KEY `Resep_ID_2` (`Resep_ID`),
-  KEY `User_ID_2` (`User_ID`)
+  `Fav` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='nanti edit lagi';
-
---
--- RELATIONSHIPS FOR TABLE `favorite`:
---   `Resep_ID`
---       `resep` -> `ID`
---   `User_ID`
---       `user` -> `ID`
---
 
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `resep`
 --
--- Creation: Jun 13, 2021 at 01:24 PM
---
 
-CREATE TABLE IF NOT EXISTS `resep` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `resep` (
+  `ID` int(11) NOT NULL,
   `Name` varchar(100) NOT NULL,
   `Owner` varchar(50) NOT NULL,
   `Content` text NOT NULL,
   `Image` varchar(100) NOT NULL,
-  `User_ID` int(11) NOT NULL,
-  PRIMARY KEY (`ID`),
-  UNIQUE KEY `Name` (`Name`),
-  KEY `user_id` (`User_ID`),
-  KEY `User_ID_2` (`User_ID`),
-  KEY `User_ID_3` (`User_ID`),
-  KEY `Owner` (`Owner`)
+  `User_ID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='nanti edit lagi';
-
---
--- RELATIONSHIPS FOR TABLE `resep`:
---   `User_ID`
---       `user` -> `ID`
---   `Owner`
---       `user` -> `Username`
---
 
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `user`
 --
--- Creation: Jun 13, 2021 at 12:24 PM
---
 
-CREATE TABLE IF NOT EXISTS `user` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `user` (
+  `ID` int(11) NOT NULL,
   `Name` varchar(60) NOT NULL,
   `Email` varchar(250) NOT NULL,
-  `Password` int(16) NOT NULL,
   `Username` varchar(25) NOT NULL,
+  `Password` int(16) NOT NULL,
   `Image` blob NOT NULL,
   `Bio` varchar(100) NOT NULL,
   `Resep Own` varchar(100) NOT NULL,
-  `Resep Fav` varchar(100) NOT NULL,
-  PRIMARY KEY (`ID`),
-  UNIQUE KEY `Email` (`Email`),
-  UNIQUE KEY `Name` (`Name`),
-  UNIQUE KEY `Username` (`Username`)
+  `Resep Fav` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- RELATIONSHIPS FOR TABLE `user`:
+-- Dumping data for table `user`
 --
+
+INSERT INTO `user` (`ID`, `Name`, `Email`, `Username`, `Password`, `Image`, `Bio`, `Resep Own`, `Resep Fav`) VALUES
+
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `comment`
+--
+ALTER TABLE `comment`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `Resep_ID` (`Resep_ID`),
+  ADD UNIQUE KEY `User_ID` (`User_ID`);
+
+--
+-- Indexes for table `favorite`
+--
+ALTER TABLE `favorite`
+  ADD UNIQUE KEY `Resep_ID` (`Resep_ID`),
+  ADD UNIQUE KEY `User_ID` (`User_ID`),
+  ADD KEY `Resep_ID_2` (`Resep_ID`),
+  ADD KEY `User_ID_2` (`User_ID`);
+
+--
+-- Indexes for table `resep`
+--
+ALTER TABLE `resep`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `Name` (`Name`),
+  ADD KEY `user_id` (`User_ID`),
+  ADD KEY `User_ID_2` (`User_ID`),
+  ADD KEY `User_ID_3` (`User_ID`),
+  ADD KEY `Owner` (`Owner`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `Email` (`Email`),
+  ADD UNIQUE KEY `Username` (`Username`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `comment`
+--
+ALTER TABLE `comment`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `resep`
+--
+ALTER TABLE `resep`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables
