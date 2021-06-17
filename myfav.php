@@ -22,7 +22,7 @@
     <div class="side">
       <a href="profil.php"><button class="p_myaccount" type="button">Akun Saya</button></a>
       <br />
-      <a href="myrecipes.php"><button class="p_myrecipes" type="button">Resep Saya</button></a>
+      <a href="myrecipe.php"><button class="p_myrecipes" type="button">Resep Saya</button></a>
       <br />
       <a href="myfav.php"><button class="p_myfav" type="button">Favorit Saya</button></a>
       <br />
