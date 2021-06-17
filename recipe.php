@@ -11,7 +11,7 @@ if(isset($_POST['unggah'])){
 
 	// ambil data dari formulir
 	$judul = htmlspecialchars($_POST['judul']);
-	$username = htmlspecialchars($_POST['username']);
+	$username = htmlspecialchars($_POST['Username']);
 	$content = htmlspecialchars($_POST['content']);
 
  //cek password1 dan $password2
