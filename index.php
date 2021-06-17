@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require 'functions.php'
 
@@ -26,14 +26,17 @@ require 'functions.php'
 		</header>
 
         <!-- isi homepage -->
-        <section>
-            <div class="box">
-                <h2>Homepage</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Ullam aut perspiciatis inventore! Commodi praesentium doloribus ratione, 
-                    voluptas laudantium at dignissimos!</p>
-            </div>
-        </section>
+				<div class="body">
+					<div class="box">
+						<div class="welcomeword">
+							<h2>Selamat datang di</h2>
+							<h1>Snackie!</h1>
+							<!-- <h1>
+									<span class="type-animation animating">Selamat datang di Snackie!</span>
+							</h1> -->
+						</div>
+					</div>
+				</div>
         <!-- isi homepage -->
 
         <!-- footer -->
