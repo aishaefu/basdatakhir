@@ -1,12 +1,3 @@
-<?php 
-session_start();
-if( !isset($_SESSION["login"]) ) {
-    header("Location: form.php");
-    exit;
-}
-
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
