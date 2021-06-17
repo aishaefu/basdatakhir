@@ -38,7 +38,8 @@ $result = mysqli_query($conn, "SELECT * FROM resep");
 					</div>
 					<br>
 					<div class="user">
-						<span class="type-animation animating">user!</span>
+            <!-- Snackers! -->
+						<span class="type-animation animating">Snackers!</span>
 					</div>
  				</h1>
 			</div>
@@ -55,7 +56,7 @@ $result = mysqli_query($conn, "SELECT * FROM resep");
 
 					<label class="upresep"><input type="file" value="upload">Upload Foto</label>
 					<br>
-					<input class="rform" type="text" id="upresep" placeholder="username" name="username">
+					<input class="rform" type="text" placeholder="username" name="Username">
 					</br>
 					<br>
 					<textarea class="rtextarea" type="text" placeholder="Tulis resepmu di sini" name="content"></textarea>
@@ -87,8 +88,8 @@ $result = mysqli_query($conn, "SELECT * FROM resep");
 	            <div class="col col-3" data-label="Waktu"><?php echo $row["Content"]; ?></div>
 	            <div class="col col-4" data-label="Aksi">
 	              <div class="td">
-	                <a href="editresep.php?id=<?php echo $row["ID"] ?" class="td btn-5">Edit</a>
-	                <a href="hapus.php?id=<?php echo $row["ID"] ? " class="td btn-6">Delete</a>
+	                <a href="editresep.php?id=<?php echo $row["ID"] ?>" class="td btn-5">Edit</a>
+	                <a href="hapus.php?id=<?php echo $row["ID"] ?>" class="td btn-6">Delete</a>
 	              </div>
 	            </div>
 	          </li>
